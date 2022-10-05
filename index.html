@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SurveyForm</title>
-</head>
-<body>
-    <h1 id="Title" >AmenandNelson Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform </p>
+  </head>
+  <body>
+    <h1 id="Title">AmenandNelson Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
 
     <form action="post" id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" name="name">
-        <label for="email" id="email-label">Email</label>
-        <input type="email" name="email">
-        <label for="age" id="number-label">Age</label>
-        <input type="number" min="18" max="90" name="age">
-
-       
-
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" placeholder="Enter your name" />
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" placeholder="Enter your Email" />
+      <label for="age" id="number-label">Age</label>
+      <input type="number" min="18" max="90" name="age" placeholder="Age" />
+      <p>Which option best describes your current role?</p>
+      <select name="roles" id="dropdown">
+        <option value="student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
+        <option value="Full Time Leaner">Full Time Leaner</option>
+        <option value="Prefer not to say">Prefer not to sa</option>
+        <option value="Other">Other</option>
+      </select>
+      <p>Would you recommend Microverse to a friend?</p>
+      <input type="radio" name="recommendation" />
+      <label for="definitely">Definitely</label>
+      <input type="radio" name="recommendation" />
+      <label for="maybe">Maybe</label>
+      <input type="radio" name="recommendation" />
+      <label for="not sure">Not sure</label>
+      <p>What is your favorite feature of Microverse?</p>
+      <input type="checkbox" value="content" />
+      <label for="content">Course content</label>
+      <input type="checkbox" value="challenges" />
+      <label for="challenges">Coding Challenges</label>
+      <input type="checkbox" value="teamwork" />
+      <label for="teamwork">Teamwork</label>
+      <label for="microverswReview">Any comments and suggestions</label>
+      <textarea name="microverswReview" rows="5" cols="50"></textarea>
+      <button type="button" id="submit">Submit</button>
     </form>
-</body>
+  </body>
 </html>
