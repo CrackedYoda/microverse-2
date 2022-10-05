@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    display: grid;
+    background-image: url('back.jpg');
+    display: block;
+}
+.heading{
+    justify-content: center;
+    text-align: center;
+}
+input{
+width: 100%;
+border: 2px solid black;
+  border-radius: 4px;
+width: 50%;
+display: block;
+font-weight: 20px;
+}
+
+.form{
+    width: 100%;
+    display: block;
+    justify-content: center;
+}

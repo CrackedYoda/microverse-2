@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SurveyForm</title>
   </head>
   <body>
+    <div class="main">
+        <div class="heading">
     <h1 id="Title">AmenandNelson Survey Form</h1>
     <p id="description">
       Thank you for taking the time to help us improve the platform
     </p>
-
-    <form action="post" id="survey-form">
+</div>
+<div class="form"></div>
+    <form action="post" id="survey-form" class="form">
       <label for="name" id="name-label">Name</label>
       <input type="text" name="name" placeholder="Enter your name" />
       <label for="email" id="email-label">Email</label>
@@ -36,7 +40,8 @@
       <label for="not sure">Not sure</label>
       <p>What is your favorite feature of Microverse?</p>
       <input type="checkbox" value="content" />
-      <label for="content">Course content</label>
+      <label for="con
+      tent">Course content</label>
       <input type="checkbox" value="challenges" />
       <label for="challenges">Coding Challenges</label>
       <input type="checkbox" value="teamwork" />
@@ -45,5 +50,7 @@
       <textarea name="microverswReview" rows="5" cols="50"></textarea>
       <button type="button" id="submit">Submit</button>
     </form>
+</div>
+</div>
   </body>
 </html>
